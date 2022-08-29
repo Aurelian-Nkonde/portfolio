@@ -1,0 +1,72 @@
+<header class="container max-w-4xl mx-auto py-10 flex justify-around items-center">
+    <h1 class="font-sans hidden lg:block text-3xl md:text-4xl tracking-wide font-bold">Aurelian<span class="text-gray-400">Nkonde</span></h1>
+    <ul class="flex flex-col md:flex-row items-center ">
+        <li class="font-serif text-2xl mb-3 md:mb-0 md:mr-10  border-b-2 border-gray-700">Github</li>
+        <li class="font-serif text-2xl  border-b-2 border-gray-700">Linkedln</li>
+    </ul>
+</header>
+
+<div class="mm">
+    <div class="container mx-w-4xl mx-auto py-20 px-10">
+        <div class="text-center">
+            <h1 class="font-serif text-4xl md:text-5xl tracking-lg pb-2">Ooh Hi!</h1>
+            <h1 class="font-serif text-4xl md:text-5xl tracking-lg pb-2"><span>Mi nombre es</span> Aurelian Nkonde</h1>
+            <h3 class="font-serif text-2xl md:text-3xl tracking-lg pb-2">A fullStack Developer</h3>
+            <p class="font-serif text-xl md:text-2xl tracking-lg pb-2">my striving code, visit my <span class="underline cursor-pointer">dojo</span></p>
+        </div>
+    </div>
+</div>
+
+<div class="container mx-auto max-w-4xl pt-20 pb-10 px-10">
+    <div class="pb-12">
+        <a class="font-sans text-xl bg-black text-white py-3 px-10">Projects</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+        <div  *ngFor="let project of myProjects" class="">
+            <p class="font-serif text-gray-600 text-2xl pb-3">{{ project.name }}</p>
+            <div class="pb-2 border-2 border-gray-300">
+                <img [src]="project.image" alt="" class="w-auto">
+            </div>
+            <p class="font-sans text-xl py-3 pb-2">{{ project.tech }}</p>
+            <div class="flex item-center gap-3">
+                <p class="font-sans text-xl underline">
+                    <a [href]="project.viewUrl">View</a>
+                </p>
+                <p class="font-sans text-xl underline">
+                    <a window. loca >CodeInfo</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container mx-auto max-w-4xl py-20 px-10">
+    <div class="pb-12">
+        <a class="font-sans text-xl bg-black text-white py-3 px-10">Contact-Me</a>
+    </div>
+    <form class="max-w-lg  ">
+        <div class="py-2">
+            <label for="" class="font-sans text-xl text-gray-700">Name</label>
+            <input type="text" class="font-sans text-xl py-2 px-3 w-full border-2 border-gray-300">
+        </div>
+        <div class="py-2">
+            <label for="" class="font-sans text-xl text-gray-700">Email</label>
+            <input type="text" placeholder="example@gmail.com" class="font-sans text-xl py-2 px-3 w-full border-2 border-gray-300">
+        </div>
+        <div class="py-2">
+            <label for="" class="font-sans text-xl text-gray-700">Message</label>
+            <textarea name="" class="font-sans text-xl py-2 px-3 w-full border-2 border-gray-300" id="" cols="30" rows="4"></textarea>
+        </div>
+        <button class="bg-black text-gray-300 py-2 w-full shadow-xl">Send Message</button>
+    </form>
+</div>
+
+<div class="bg-black">
+    <div class="container mx-auto max-w-4xl text-center py-20 px-10">
+        <h1 class="font-serif text-2xl text-center text-gray-100">Aurelian Nkonde</h1>
+        <h1 class="font-sans text-white text-xl">045 343 5533</h1>
+        <p class="font-sans text-xl text-white">thousand@gmai.com</p>
+    </div>
+</div>
